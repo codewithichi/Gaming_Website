@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width,initial-scale=1.0">
+  <title>Gaming Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+  <header>
+
+    <a href="#" class="logo">Ichiban.</a>
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#tournaments">Tournaments</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="action">
+      <div class="searchBx">
+        <a href="#"><i class='bx bx-search'></i></a>
+        <input type="text" placeholder="Search Games">
+      </div>
+    </div>
+
+    <div class="toggleMenu" onclick="toggleMenu();"></div>
+
+  </header>
+
+  <!--- home banner --->
+
+  <div class="banner animeX" id="home">
+    <div class="bg">
+      <div class="content">
+        <h2>Defy the Limits: <br> Valorant </h2>
+        <p>Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
+</p>
+        <a href="#" class="btn">Join Now</a>
+      </div>
+      <img src="images/reyna.png">
+    </div>
+  </div>
+
+  <!--- about --->
+
+  <div class="about animeX" id="about">
+    <div class="contentBx">
+      <h2>Your Agents:<br> CREATIVITY IS YOUR GREATEST WEAPON. </h2>
+      <p>More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same. Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.
+</p>
+      <a href="#">Read More</a>
+    </div>
+    <img src="images/reaver.png">
+  </div>
+
+  <!--- games --->
+
+  <div class="games animeX" id="games">
+    <h2>Popular Games</h2>
+    <ul>
+      <li class="list active" data-filter="all">All</li>
+      <li class="list" data-filter="pc">Pc Games</li>
+      <li class="list" data-filter="mobile">Mobile Games</li>
+    </ul>
+
+    <div class="cardBx">
+      <div class="card" data-item="pc">
+        <img src="images/tt.png">
+        <div class="content">
+          <h4>Teamfight Tactics</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="card" data-item="pc">
+      <img src="images/lol.png">
+        <div class="content">
+          <h4>League of Legends</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="card" data-item="pc">
+      <img src="images/lor.png">
+        <div class="content">
+          <h4>Legends of Rutunerra</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="card" data-item="pc">
+      <img src="images/lolwr.png">
+        <div class="content">
+          <h4>League of Legends: Wild Rift</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div> 
+
+  <div class="card" data-item="pc">
+      <img src="images/valo.png">
+        <div class="content">
+          <h4>Valorant</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="card" data-item="mobile">
+      <img src="images/ml.png">
+        <div class="content">
+          <h4>Mobile Legends</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div>   
+
+  <div class="card" data-item="pc">
+      <img src="images/ac.png">
+        <div class="content">
+          <h4>Assassin's Creed</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="card" data-item="mobile">
+      <img src="images/cod.png">
+        <div class="content">
+          <h4>Call of Duty</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="card" data-item="pc">
+      <img src="images/dota2.png">
+        <div class="content">
+          <h4>Dota 2</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!--- tournaments --->
+
+  <div class="tournaments animeX" id="tournaments">
+    <h2>Live Tournaments</h2>
+    <div class="boxBx">
+      <div class="box">
+        <img src="images/tourna.png">
+        <div class="content">
+          <h4><span>50</span> Matches in progress..</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin tempus tortor. 
+          </p>
+          <div class="btn">
+            <a href="#" class="watch">Watch</a>
+            <a href="#" class="join">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="box">
+        <img src="images/tourna2.png">
+        <div class="content">
+          <h4><span>30</span> Matches in progress..</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin tempus tortor. 
+          </p>
+          <div class="btn">
+            <a href="#" class="watch">Watch</a>
+            <a href="#" class="join">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="box">
+        <img src="images/tourna3.png">
+        <div class="content">
+          <h4><span>40</span> Matches in progress..</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin tempus tortor. 
+          </p>
+          <div class="btn">
+            <a href="#" class="watch">Watch</a>
+            <a href="#" class="join">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="box">
+        <img src="images/tourna4.png">
+        <div class="content">
+          <h4><span>40</span> Matches in progress..</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin tempus tortor. 
+          </p>
+          <div class="btn">
+            <a href="#" class="watch">Watch</a>
+            <a href="#" class="join">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+  <div class="box">
+        <img src="images/tourna5.png">
+        <div class="content">
+          <h4><span>20</span> Matches in progress..</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin tempus tortor. 
+          </p>
+          <div class="btn">
+            <a href="#" class="watch">Watch</a>
+            <a href="#" class="join">Join Now</a>
+          </div>
+        </div>
+      </div>
+
+ <div class="box">
+        <img src="images/tourna6.png">
+        <div class="content">
+          <h4><span>10</span> Matches in progress..</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin tempus tortor. 
+          </p>
+          <div class="btn">
+            <a href="#" class="watch">Watch</a>
+            <a href="#" class="join">Join Now</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!--- contact --->
+
+  <div class="contact animeX" id="contact">
+    <img src="images/contacteme.png">
+    <div class="form">
+      <h1>Contact Us</h1>
+      <div class="inputBx">
+        <p>Enter Name</p>
+        <input type="text" placeholder="Full Name">
+      </div>
+    <div class="inputBx">
+      <p>Enter Email</p></p>
+      <input type="text" placeholder="Full Name">
+    </div>
+    <div class="inputBx">
+      <p>Message</p>
+      <textarea placeholder="Type here..."></textarea>
+    </div>
+    <div class="inputBx">
+      <input type="submit" name="Submit">
+    </div>
+    
+    </div>
+  </div>
+
+<!--- footer --->
+
+  <footer>
+    <div class="info">
+      <a href="#" class="logo">Ichiban.</a>
+      <p><i class='bx bx-copyright'></i> Ganda ni Ichiban</p>
+      <ul>
+        <li><a href="#"><i class='bx bxl-facebook-square' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+        <li><a href="#"><i class='bx bxl-discord'></i></a></li>
+        <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    /* sticky navbar */
+    window.addEventListener('scroll', function () {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+    
+    /* responsive navbar */
+
+  function toggleMenu(){
+    const toggleMenu = document.querySelector('.toggleMenu');
+    const nav = document.querySelector('.nav');
+    toggleMenu.classList.toggle('active')
+    nav.classList.toggle('active')
+  }
+
+    /* scrolling animation */
+
+    window.addEventListener('scroll', function(){
+      var anime = document.querySelectorAll('.animeX');
+
+      for(var s = 0; s < anime.length; s++){
+          var windowheight = window.innerHeight;
+          var animetop = anime[s].getBoundingClientRect().top;
+          var animepoint = 150;
+
+        if(anime < windowheight - animepoint){
+          anime[s].classList.add('active');
+        }
+        else {
+          anime[s].classList.remove('active');
+        }
+      }
+    })
+
+    /* filterable cards */
+
+    let list = document.querySelectorAll('.list');
+    let card = document.querySelectorAll('.card');
+
+    for(let i = 0; i<list.length; i++){
+      list[i].addEventListener('click',function(){
+        for(let j=0; j<list.length; j++){
+          list[j].classList.remove('active');
+        }
+        this.classList.add('active');
+
+        let dataFilter = this.getAttribute('data-filter');
+
+        for(let k=0; k<card.length; k++)
+        {
+          card[k].classList.remove('active');
+          card[k].classList.add('hide');
+
+          if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+          card[k].classList.remove('hide');
+          card[k].classList.add('active');  
+          }
+        }
+      })
+    }
+  </script>
+
+</body>
+
+</html>
